@@ -1,0 +1,33 @@
+# Generated Unreal files
+/Binaries/
+/DerivedDataCache/
+/Intermediate/
+/Saved/
+/Plugins/**/Intermediate/
+/Plugins/**/Saved/
+# Plugin binaries are intentionally not ignored: binary-only plugins need them.
+# Ignore individual rebuildable plugin Binaries folders when adding source plugins.
+
+# Local IDE state and generated solutions
+/.vs/
+/.idea/
+/.vscode/
+*.sln
+*.suo
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.opendb
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# Local editor content and credentials
+/Content/Developers/
+/Content/Collections/
+.env
+.env.*
+!.env.example
+*.log
+Thumbs.db
+.DS_Store
