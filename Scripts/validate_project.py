@@ -1,6 +1,9 @@
 """Validate the saved project foundation using Unreal's editor commandlet."""
 import unreal
 
+native_mode = unreal.load_class(None, "/Script/XJT.XJTGameModeBase")
+assert native_mode is not None, "Native XJT game module cannot be loaded"
+
 levels = unreal.get_editor_subsystem(unreal.LevelEditorSubsystem)
 assert levels.load_level("/Game/XJT/Maps/L_Prototype"), "Map cannot be loaded"
 actors = unreal.get_editor_subsystem(unreal.EditorActorSubsystem).get_all_level_actors()

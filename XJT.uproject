@@ -23,5 +23,12 @@
       "Name": "AndroidFileServer",
       "Enabled": false
     }
+  ],
+  "Modules": [
+    {
+      "Name": "XJT",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    }
   ]
 }
